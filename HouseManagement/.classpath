@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <classpath>
-	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
 	<classpathentry kind="src" path="src"/>
 	<classpathentry kind="lib" path="E:/java培训/eclipse/plugins/org.eclipse.osgi_3.12.100.v20180210-1608.jar" sourcepath="E:/java培训/eclipse/plugins/org.eclipse.osgi_3.12.100.v20180210-1608.jar"/>
 	<classpathentry kind="lib" path="E:/java培训/eclipse/plugins/org.eclipse.core.commands_3.9.0.v20170530-1048.jar" sourcepath="E:/java培训/eclipse/plugins/org.eclipse.core.commands_3.9.0.v20170530-1048.jar"/>
