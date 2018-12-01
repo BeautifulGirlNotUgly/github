@@ -137,5 +137,9 @@ public class Login {
 		lblNewLabel_3.setImage(SWTResourceManager.getImage(Login.class, "/images/btn_mini_normal.png"));
 		lblNewLabel_3.setBounds(509, -6, 28, 27);
 		
+		Label lblNewLabel_4 = new Label(shell, SWT.NONE);
+		lblNewLabel_4.setBounds(47, 93, 61, 17);
+		lblNewLabel_4.setText("New Label");
+		
 	}
 }
