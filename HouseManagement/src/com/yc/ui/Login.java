@@ -2,6 +2,9 @@ package com.yc.ui;
 import org.eclipse.swt.widgets.Display;
 import org.eclipse.swt.widgets.Shell;
 import java.awt.MouseInfo;
+import java.util.ArrayList;
+import java.util.List;
+
 import org.eclipse.swt.SWT;
 import org.eclipse.wb.swt.SWTResourceManager;
 import com.yc.db.DBHelper;
@@ -22,6 +25,7 @@ public class Login {
 	protected boolean dragFrag;
 	protected int x;
 	protected int y;
+	private Text text_1;
 	/**
 	 * Launch the application.
 	 * @param args
@@ -91,16 +95,40 @@ public class Login {
 		combo.add("用户");
 		combo.select(1);
 		
-		Combo combo_1 = new Combo(shell, SWT.NONE);
-		combo_1.setFont(SWTResourceManager.getFont("宋体", 16, SWT.NORMAL));
-		combo_1.setBounds(291, 232, 186, 28);
-		
 		
 		text = new Text(shell, SWT.BORDER | SWT.PASSWORD);
 		text.setFont(SWTResourceManager.getFont("宋体", 16, SWT.NORMAL));
 		text.setBounds(291, 306, 186, 23);
 		
 		Button btnNewButton = new Button(shell, SWT.NONE);
+		btnNewButton.addSelectionListener(new SelectionAdapter() {
+			@Override
+			public void widgetSelected(SelectionEvent e) {
+				if(combo.getText().equals("管理员")) {
+					String mname=text_1.getText();
+					String mpassword=text.getText();
+					
+					//String sql="select * from manager where mid = ? and mpassword = ?";
+					if("admin".equals(mname) && "123456".equals(mpassword)) {
+						Manager mg = new Manager(null);
+						mg.open();
+					}else {
+						//弹窗提示“账号或密码错误，请重试！”
+					}	
+				}else {
+					String rname=text_1.getText();
+					String rpassword=text.getText();
+					
+					//String sql="select * from renter where rid = ? and rpassword = ?";
+					if("admin".equals(rname) && "123456".equals(rpassword)) {
+						/*User ur = new User(null);
+						ur.open();*/
+					}else {
+						//弹窗提示“账号或密码错误，请重试！”
+					}	
+				}
+			}
+		});
 		btnNewButton.setFont(SWTResourceManager.getFont("΢���ź� Light", 11, SWT.NORMAL));
 		
 		btnNewButton.setBounds(369, 377, 98, 27);
@@ -158,6 +186,9 @@ public class Login {
 		});
 		button.setBounds(154, 375, 98, 30);
 		button.setText("注册");
+		
+		text_1 = new Text(shell, SWT.BORDER);
+		text_1.setBounds(285, 234, 186, 26);
 		
 	}
 }
