@@ -1,8 +1,7 @@
 package com.yc.bean;
 
-import org.omg.CORBA.PRIVATE_MEMBER;
-
 public class HouseRes {
+	private String unit;
 	private String hname;
 	private String area;
 	private Long monthMoney;
@@ -45,8 +44,19 @@ public class HouseRes {
 	public void setRcash(Long rcash) {
 		this.rcash = rcash;
 	}
-	public HouseRes(String hname, String area, Long monthMoney, Long hproperty, Long hware, Long rcash) {
+	
+	public HouseRes() {
 		super();
+	}
+	
+	@Override
+	public String toString() {
+		return "HouseRes [unit=" + unit + ", hname=" + hname + ", area=" + area + ", monthMoney=" + monthMoney
+				+ ", hproperty=" + hproperty + ", hware=" + hware + ", rcash=" + rcash + "]";
+	}
+	public HouseRes(String unit, String hname, String area, Long monthMoney, Long hproperty, Long hware, Long rcash) {
+		super();
+		this.unit = unit;
 		this.hname = hname;
 		this.area = area;
 		this.monthMoney = monthMoney;
@@ -54,14 +64,11 @@ public class HouseRes {
 		this.hware = hware;
 		this.rcash = rcash;
 	}
-	public HouseRes() {
-		super();
-		// TODO Auto-generated constructor stub
+	public String getUnit() {
+		return unit;
 	}
-	@Override
-	public String toString() {
-		return "HouseRes [hname=" + hname + ", area=" + area + ", monthMoney=" + monthMoney + ", hproperty=" + hproperty
-				+ ", hware=" + hware + ", rcash=" + rcash + "]";
+	public void setUnit(String unit) {
+		this.unit = unit;
 	}
 	
 
