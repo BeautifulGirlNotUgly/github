@@ -1,40 +1,41 @@
 package com.yc.bean;
 
 public class Manager {
-	private  String mname;
-	private  int mid;
-	private  String mpassword;
-	public String getMname() {
-		return mname;
+	private  String aname;
+	private  int aid;
+	private  String apassword;
+	public String getAname() {
+		return aname;
 	}
-	public void setMname(String mname) {
-		this.mname = mname;
+	public void setAname(String aname) {
+		this.aname = aname;
 	}
-	public int getMid() {
-		return mid;
+	public int getAid() {
+		return aid;
 	}
-	public void setMid(int mid) {
-		this.mid = mid;
+	public void setAid(int aid) {
+		this.aid = aid;
 	}
-	public String getMpassword() {
-		return mpassword;
+	public String getApassword() {
+		return apassword;
 	}
-	public void setMpassword(String mpassword) {
-		this.mpassword = mpassword;
+	public void setApassword(String apassword) {
+		this.apassword = apassword;
 	}
-	public Manager(String mname, int mid, String mpassword) {
+	@Override
+	public String toString() {
+		return "Manager [aname=" + aname + ", aid=" + aid + ", apassword=" + apassword + "]";
+	}
+	public Manager(String aname, int aid, String apassword) {
 		super();
-		this.mname = mname;
-		this.mid = mid;
-		this.mpassword = mpassword;
+		this.aname = aname;
+		this.aid = aid;
+		this.apassword = apassword;
 	}
 	public Manager() {
 		super();
 		// TODO Auto-generated constructor stub
 	}
-	@Override
-	public String toString() {
-		return "Manager [mname=" + mname + ", mid=" + mid + ", mpassword=" + mpassword + "]";
-	}
+	
 	
 }

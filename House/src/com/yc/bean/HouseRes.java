@@ -1,82 +1,75 @@
 package com.yc.bean;
 
 public class HouseRes {
-	private String hid;
-	private String unit;//单位
-	private String hname;//名称
-	private String area;//面积
-	private Long monthMoney;//月租金
-	private Long hproperty;//物业
-	private Long hware;//仓库
-	private Long rcash;//押金
-	public String getHid() {
+	private int hid;
+	private String location;//名称
+	private int housesize;//面积
+	private int monthmoney;//月租金
+	private int wuye;//物业
+	private int warehouse;//仓库
+	private int yajin;//押金
+	public int getHid() {
 		return hid;
 	}
-	public void setHid(String hid) {
+	public void setHid(int hid) {
 		this.hid = hid;
 	}
-	public String getHname() {
-		return hname;
+	public String getLocation() {
+		return location;
 	}
-	public void setHname(String hname) {
-		this.hname = hname;
+	public void setLocation(String location) {
+		this.location = location;
 	}
-	public String getArea() {
-		return area;
+	public int getHousesize() {
+		return housesize;
 	}
-	public void setArea(String area) {
-		this.area = area;
+	public void setHousesize(int housesize) {
+		this.housesize = housesize;
 	}
-	public Long getMonthMoney() {
-		return monthMoney;
+	public int getMonthmoney() {
+		return monthmoney;
 	}
-	public void setMonthMoney(Long monthMoney) {
-		this.monthMoney = monthMoney;
+	public void setMonthmoney(int monthmoney) {
+		this.monthmoney = monthmoney;
 	}
-	public Long getHproperty() {
-		return hproperty;
+	public int getWuye() {
+		return wuye;
 	}
-	public void setHproperty(Long hproperty) {
-		this.hproperty = hproperty;
+	public void setWuye(int wuye) {
+		this.wuye = wuye;
 	}
-	public Long getHware() {
-		return hware;
+	public int getWarehouse() {
+		return warehouse;
 	}
-	public void setHware(Long hware) {
-		this.hware = hware;
+	public void setWarehouse(int warehouse) {
+		this.warehouse = warehouse;
 	}
-	public Long getRcash() {
-		return rcash;
+	public int getYajin() {
+		return yajin;
 	}
-	public void setRcash(Long rcash) {
-		this.rcash = rcash;
+	public void setYajin(int yajin) {
+		this.yajin = yajin;
 	}
-	
-	public HouseRes() {
-		super();
-	}
-	
 	@Override
 	public String toString() {
-		return "HouseRes [unit=" + unit + ", hname=" + hname + ", area=" + area + ", monthMoney=" + monthMoney
-				+ ", hproperty=" + hproperty + ", hware=" + hware + ", rcash=" + rcash + "]";
+		return "HouseRes [hid=" + hid + ", location=" + location + ", housesize=" + housesize + ", monthmoney="
+				+ monthmoney + ", wuye=" + wuye + ", warehouse=" + warehouse + ", yajin=" + yajin + "]";
 	}
-	public HouseRes(String unit, String hname, String area, Long monthMoney, Long hproperty, Long hware, Long rcash) {
+	public HouseRes() {
 		super();
-		this.unit = unit;
-		this.hname = hname;
-		this.area = area;
-		this.monthMoney = monthMoney;
-		this.hproperty = hproperty;
-		this.hware = hware;
-		this.rcash = rcash;
+		// TODO Auto-generated constructor stub
 	}
-	public String getUnit() {
-		return unit;
+	public HouseRes(int hid, String location, int housesize, int monthmoney, int wuye, int warehouse, int yajin) {
+		super();
+		this.hid = hid;
+		this.location = location;
+		this.housesize = housesize;
+		this.monthmoney = monthmoney;
+		this.wuye = wuye;
+		this.warehouse = warehouse;
+		this.yajin = yajin;
 	}
-	public void setUnit(String unit) {
-		this.unit = unit;
-	}
+	
 	
 
 }
