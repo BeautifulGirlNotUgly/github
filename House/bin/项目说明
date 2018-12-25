@@ -1,0 +1,43 @@
+图书馆管理系统
+
+用户登录
+	1、用户登录
+	2、用户注册
+	
+图书管理
+	1、图书查看（列表）
+	2、添加图书
+	
+借阅管理
+	1、借书
+	2、还书
+
+
+用户表（users）
+userid,uname(名字),pwd(密码),address(地址),phone(电话),idcard(身份证号码),email(邮箱)
+
+图书（book）
+bookid,bname(书名),isbn(发行编号),author(作者),pubdate(刊印日期),indate(进货日期),status(借阅状态)
+
+借阅表（borrow）
+id,outtime(借阅时间),backtime(归还时间),userid(借阅人，外键),bookid(图书，外键),marker(备注)
+
+主键系列（book_seq）
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

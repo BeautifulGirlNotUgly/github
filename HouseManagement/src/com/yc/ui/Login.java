@@ -188,7 +188,7 @@ public class Login {
 		button.setText("注册");
 		
 		text_1 = new Text(shell, SWT.BORDER);
-		text_1.setBounds(285, 234, 186, 26);
+		text_1.setBounds(291, 239, 186, 26);
 		
 	}
 }

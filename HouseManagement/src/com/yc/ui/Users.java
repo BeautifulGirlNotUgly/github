@@ -84,7 +84,7 @@ public class Users {
 	
 	Label lblNewLabel = new Label(composite, SWT.NONE);
 	lblNewLabel.setFont(SWTResourceManager.getFont("楷体", 15, SWT.BOLD));
-	lblNewLabel.setBounds(0, 10, 259, 26);
+	lblNewLabel.setBounds(0, 10, 337, 26);
 	lblNewLabel.setText("欢迎登陆小区物业管理系统");
 	
 	Label lblNewLabel_1 = new Label(composite, SWT.NONE);
@@ -164,7 +164,7 @@ public class Users {
 	
 	Label lblNewLabel_3 = new Label(composite_4, SWT.NONE);
 	lblNewLabel_3.setFont(SWTResourceManager.getFont("Microsoft YaHei UI", 27, SWT.NORMAL));
-	lblNewLabel_3.setBounds(103, 118, 466, 145);
+	lblNewLabel_3.setBounds(75, 115, 600, 145);
 	lblNewLabel_3.setText("欢迎使用小区物业管理系统");
 	
 	Composite composite_6 = new Composite(composite_5, SWT.NONE);
